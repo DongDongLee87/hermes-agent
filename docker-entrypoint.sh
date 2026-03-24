@@ -16,3 +16,4 @@ EOF
 
 echo "Starting Hermes gateway..."
 exec hermes gateway
+
