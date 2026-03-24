@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-mkdir -p /data
 mkdir -p /data/.hermes
 
 export HERMES_HOME=/data/.hermes
@@ -16,4 +15,4 @@ LLM_MODEL=${LLM_MODEL:-anthropic/claude-haiku-4-5}
 EOF
 
 echo "Starting Hermes gateway..."
-exec hermes gateway --telegram
+exec hermes gateway
